@@ -15,7 +15,7 @@ function CreatePage({ addEntity }) {
 
   return (
     <div>
-      <h2>Cadastrar Novo Item</h2>
+      <h2>Cadastrar Novo item</h2>
       <form onSubmit={handleSubmit}>
         <label>Nome do Produto:</label>
         <input
