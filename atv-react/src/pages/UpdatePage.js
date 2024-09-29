@@ -5,7 +5,7 @@ function UpdatePage({ entities, updateEntity }) {
   const { index } = useParams();
   const navigate = useNavigate();
   const [newName, setNewName] = useState(entities[index].name);
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (newName) {

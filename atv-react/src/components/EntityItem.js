@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function EntityItem({ entity, index, deleteEntity }) {
+function EntityItem({ entity, deleteEntity }) {
   return (
     <li>
       {entity.name}
-      <Link to={`/update/${index}`}>
+      <Link to={`/update/${entity.id}`}>
         <button>Atualizar</button>
       </Link>
-      <button onClick={() => deleteEntity(index)}>Excluir</button>
+      <button onClick={() => deleteEntity(entity.id)}>Excluir</button>
     </li>
   );
 }
